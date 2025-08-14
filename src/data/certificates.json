@@ -1,0 +1,52 @@
+
+[
+  {
+    "title": "Programación en Java",
+    "issuer": "Alura Latam",
+    "date": "2024",
+    "description": "Fundamentos de programación en Java y desarrollo de aplicaciones.",
+    "logo": "/assets/certificates/alura.png"
+  },
+  {
+    "title": "Desarrollo Frontend con HTML, CSS y JavaScript",
+    "issuer": "Alura Latam",
+    "date": "2024",
+    "description": "Creación de interfaces web modernas y responsive.",
+    "logo": "/assets/certificates/alura.png"
+  },
+  {
+    "title": "Python para Principiantes",
+    "issuer": "Curso Online",
+    "date": "2024",
+    "description": "Introducción a Python, sintaxis básica y primeros proyectos.",
+    "logo": "/assets/certificates/python.png"
+  },
+  {
+    "title": "Introducción a Ciberseguridad",
+    "issuer": "Cisco Networking Academy",
+    "date": "2024",
+    "description": "Fundamentos de ciberseguridad y buenas prácticas de protección de datos.",
+    "logo": "/assets/certificates/cisco.png"
+  },
+  {
+    "title": "Git y GitHub",
+    "issuer": "Alura Latam",
+    "date": "2024",
+    "description": "Control de versiones con Git y colaboración en GitHub.",
+    "logo": "/assets/certificates/alura.png"
+  },
+  {
+    "title": "React desde Cero",
+    "issuer": "Curso Online",
+    "date": "2024",
+    "description": "Desarrollo de aplicaciones web modernas con React.",
+    "logo": "/assets/certificates/react.png"
+  },
+  {
+    "title": "Node.js básico",
+    "issuer": "Curso Online",
+    "date": "2024",
+    "description": "Creación de servidores y APIs con Node.js y Express.",
+    "logo": "/assets/certificates/node.png"
+  }
+]

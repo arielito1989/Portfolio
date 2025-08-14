@@ -1,0 +1,54 @@
+{
+  "home": {
+    "greeting": "Ariel Nogueroles",
+    "role": "Programmer & Cybersecurity Student",
+    "bio": "I am Ariel Nogueroles, passionate about programming and cybersecurity. I come from the world of metallurgy, where I learned discipline and precision, and now I apply that same dedication to software development."
+  },
+  "about": {
+    "title": "About Me",
+    "paragraph1": "My professional career began in a very different field from technology. I served in the army, where I developed strong discipline and a great sense of responsibility. Later, I worked in the metallurgy industry, a sector that taught me the importance of precision and attention to detail.",
+    "paragraph2": "However, my true passion was always technology. I decided to make a career change and entered the world of programming and cybersecurity. Today, I apply the same dedication and rigor that I learned in my previous experiences to build quality software and protect systems.",
+    "interests": "Interests",
+    "interest1": "Web Development",
+    "interest2": "Backend",
+    "interest3": "Cybersecurity",
+    "certificates": "Certificates"
+  },
+  "skills": {
+    "title": "Technical Skills",
+    "languages": "Languages",
+    "frameworks": "Frameworks and Libraries",
+    "tools": "Tools"
+  },
+  "projects": {
+    "title": "Projects"
+  },
+  "blog": {
+    "title": "Blog"
+  },
+  "certificates": {
+    "title": "Certificates"
+  },
+  "contact": {
+    "title": "Contact",
+    "form_title": "Send me a message",
+    "name": "Name",
+    "name_required": "Name is required",
+    "email": "Email",
+    "email_required": "Email is required",
+    "email_invalid": "Please enter a valid email",
+    "message": "Message",
+    "message_required": "Message is required",
+    "send": "Send Message",
+    "other_contact": "Other ways to contact"
+  },
+  "header": {
+    "home": "Home",
+    "about": "About Me",
+    "skills": "Skills",
+    "projects": "Projects",
+    "blog": "Blog",
+    "certificates": "Certificates",
+    "contact": "Contact"
+  }
+}

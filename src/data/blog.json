@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "title": "Mi primera entrada en el blog",
+    "date": "2025-08-13",
+    "description": "Esta es una breve descripción de mi primera entrada en el blog. Aquí hablaré sobre mis motivaciones para iniciar este blog y lo que los lectores pueden esperar.",
+    "content": "Contenido completo de la primera entrada del blog..."
+  },
+  {
+    "id": 2,
+    "title": "Desarrollo web con React y Vite",
+    "date": "2025-08-15",
+    "description": "En esta entrada, exploraremos cómo empezar a desarrollar aplicaciones web modernas y rápidas utilizando React y Vite.",
+    "content": "Contenido completo de la segunda entrada del blog..."
+  }
+]

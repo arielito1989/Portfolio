@@ -1,0 +1,54 @@
+{
+  "home": {
+    "greeting": "Ariel Nogueroles",
+    "role": "Programador & Estudiante de Ciberseguridad",
+    "bio": "Soy Ariel Nogueroles, apasionado por la programación y la ciberseguridad. Vengo del mundo de la metalurgia, donde aprendí disciplina y precisión, y ahora aplico esa misma dedicación al desarrollo de software."
+  },
+  "about": {
+    "title": "Sobre Mí",
+    "paragraph1": "Mi trayectoria profesional comenzó en un ámbito muy diferente al de la tecnología. Serví en el ejército, donde desarrollé una fuerte disciplina y un gran sentido de la responsabilidad. Posteriormente, trabajé en la industria de la metalurgia, un sector que me enseñó la importancia de la precisión y la atención al detalle.",
+    "paragraph2": "Sin embargo, mi verdadera pasión siempre fue la tecnología. Decidí dar un giro a mi carrera y me adentré en el mundo de la programación y la ciberseguridad. Hoy, aplico la misma dedicación y rigor que aprendí en mis anteriores experiencias para construir software de calidad y proteger sistemas.",
+    "interests": "Intereses",
+    "interest1": "Desarrollo Web",
+    "interest2": "Backend",
+    "interest3": "Ciberseguridad",
+    "certificates": "Certificados"
+  },
+  "skills": {
+    "title": "Habilidades Técnicas",
+    "languages": "Lenguajes",
+    "frameworks": "Frameworks y Librerías",
+    "tools": "Herramientas"
+  },
+  "projects": {
+    "title": "Proyectos"
+  },
+  "blog": {
+    "title": "Blog"
+  },
+  "certificates": {
+    "title": "Certificados"
+  },
+  "contact": {
+    "title": "Contacto",
+    "form_title": "Envíame un mensaje",
+    "name": "Nombre",
+    "name_required": "El nombre es requerido",
+    "email": "Email",
+    "email_required": "El email es requerido",
+    "email_invalid": "Introduce un email válido",
+    "message": "Mensaje",
+    "message_required": "El mensaje es requerido",
+    "send": "Enviar Mensaje",
+    "other_contact": "Otras formas de contactar"
+  },
+  "header": {
+    "home": "Home",
+    "about": "Sobre Mí",
+    "skills": "Habilidades",
+    "projects": "Proyectos",
+    "blog": "Blog",
+    "certificates": "Certificados",
+    "contact": "Contacto"
+  }
+}

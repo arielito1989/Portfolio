@@ -1,0 +1,43 @@
+
+[
+  {
+    "title": "Conversor de Monedas en Java",
+    "description": "Aplicación de escritorio en Java con Swing para conversión de divisas utilizando la API de ExchangeRate.",
+    "technologies": ["Java", "Swing", "API ExchangeRate"],
+    "image": "/assets/projects/conversor-monedas.jpg",
+    "github": "https://github.com/arielito1989/Conversor-Monedas-Java",
+    "demo": null
+  },
+  {
+    "title": "Sistema de Gestión de Clientes",
+    "description": "Aplicación en Java para la gestión de clientes y cuotas de un emprendimiento de tecnología.",
+    "technologies": ["Java", "OOP"],
+    "image": "/assets/projects/gestion-clientes.jpg",
+    "github": "https://github.com/arielito1989/Gestion-clientes",
+    "demo": null
+  },
+  {
+    "title": "Jueguito Secreto",
+    "description": "Juego desarrollado como práctica de HTML, CSS y JavaScript en Alura Latam.",
+    "technologies": ["HTML", "CSS", "JavaScript"],
+    "image": "/assets/projects/jueguito-secreto.jpg",
+    "github": "https://github.com/arielito1989/Jueguito-Secreto-",
+    "demo": null
+  },
+  {
+    "title": "Challenge Amigo Secreto",
+    "description": "Desafío para sorteo de amigo secreto en JavaScript, HTML y CSS.",
+    "technologies": ["HTML", "CSS", "JavaScript"],
+    "image": "/assets/projects/amigo-secreto.jpg",
+    "github": "https://github.com/arielito1989/challenge-amigo-secreto_esp-main",
+    "demo": null
+  },
+  {
+    "title": "Hello World",
+    "description": "Repositorio inicial para aprendizaje de Git y GitHub.",
+    "technologies": ["Markdown", "GitHub"],
+    "image": "/assets/projects/hello-world.jpg",
+    "github": "https://github.com/arielito1989/hello-world",
+    "demo": null
+  }
+]
