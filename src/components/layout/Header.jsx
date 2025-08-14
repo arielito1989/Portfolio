@@ -28,10 +28,10 @@ const Header = () => {
   return (
     <header className="bg-gray-900 text-white p-4 fixed w-full z-10">
       <div className="container mx-auto flex justify-between items-center">
-        <h1 className="text-2xl font-bold">Ariel Nogueroles</h1>
+        <h1 className="text-3xl font-bold">Ariel Nogueroles</h1>
         <nav className="hidden md:flex space-x-4 items-center">
           {navLinks.map(link => (
-            <a key={link.id} href={`#${link.id}`} onClick={(e) => {e.preventDefault(); scrollToSection(link.id)}} className="hover:text-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500 rounded">{link.title}</a>
+            <a key={link.id} href={`#${link.id}`} onClick={(e) => {e.preventDefault(); scrollToSection(link.id)}} className="hover:text-green-500 focus:outline-none focus:ring-2 focus:ring-green-500 rounded">{link.title}</a>
           ))}
           <ThemeSwitcher />
           <LanguageSwitcher />
@@ -47,7 +47,7 @@ const Header = () => {
       {isOpen && (
         <nav className="md:hidden mt-4">
           {navLinks.map(link => (
-            <a key={link.id} href={`#${link.id}`} onClick={(e) => {e.preventDefault(); scrollToSection(link.id)}} className="block w-full text-left p-2 hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-500 rounded">{link.title}</a>
+            <a key={link.id} href={`#${link.id}`} onClick={(e) => {e.preventDefault(); scrollToSection(link.id)}} className="block w-full text-left p-2 hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-green-500 rounded">{link.title}</a>
           ))}
         </nav>
       )}

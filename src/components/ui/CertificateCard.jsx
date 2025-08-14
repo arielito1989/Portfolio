@@ -24,8 +24,9 @@ const CertificateCard = ({ certificate, onClick }) => {
     >
       <img src={certificate.logo} alt={`Logo de ${certificate.issuer}`} className="w-16 h-16 mr-4" loading="lazy" />
       <div>
-        <h4 className="font-bold text-blue-400">{certificate.title}</h4>
+        <h4 className="font-bold text-green-400">{certificate.title}</h4>
         <p className="text-sm text-gray-400">{certificate.issuer} - {certificate.date}</p>
+        {certificate.description && <p className="text-xs text-gray-500 mt-1">{certificate.description}</p>}
       </div>
     </motion.button>
   )

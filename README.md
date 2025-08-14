@@ -143,7 +143,21 @@ Aquí hay una lista de las mejoras planificadas para este proyecto. Cada vez que
 - [x] Crear una sección de blog.
 
 ### Mejoras de Diseño (UI/UX)
-- [ ] Refinar la jerarquía tipográfica para dar más peso al nombre.
-- [ ] Unificar el color de acento para una mayor coherencia.
-- [ ] Explorar un layout asimétrico para la sección de inicio.
-- [ ] Mejorar las animaciones con efectos escalonados (stagger).
+- [x] Refinar la jerarquía tipográfica para dar más peso al nombre.
+- [x] Unificar el color de acento para una mayor coherencia.
+- [x] Explorar un layout asimétrico para la sección de inicio.
+- [x] Mejorar las animaciones con efectos escalonados (stagger).
+
+### Mejoras Futuras
+- [x] Mejorar la seguridad y UX del formulario de contacto.
+  - [x] Investigar y elegir una solución anti-spam (ej. Honeypot, Cloudflare Turnstile).
+  - [x] Implementar la solución anti-spam en el componente del formulario.
+  - [x] Añadir feedback visual claro al usuario tras el envío (mensaje de éxito/error).
+  - [x] Hacer que el mensaje de feedback desaparezca automáticamente tras unos segundos.
+  - [x] Mover el foco del teclado al mensaje de feedback para mejorar la accesibilidad.
+  - [x] Validar que el formulario sigue siendo accesible (a11y).
+
+- [x] Mejorar y dinamizar la sección de "Home".
+  - [x] Solucionar el recorte de la imagen de perfil.
+  - [x] Añadir botones de Llamada a la Acción (CTA) ("Ver Proyectos" y "Descargar CV").
+  - [x] Implementar un título animado con efecto de "máquina de escribir".

@@ -2,7 +2,9 @@
   "home": {
     "greeting": "Ariel Nogueroles",
     "role": "Programador & Estudiante de Ciberseguridad",
-    "bio": "Soy Ariel Nogueroles, apasionado por la programación y la ciberseguridad. Vengo del mundo de la metalurgia, donde aprendí disciplina y precisión, y ahora aplico esa misma dedicación al desarrollo de software."
+    "bio": "Soy Ariel Nogueroles, un desarrollador de software con una profunda pasión por la creación de soluciones tecnológicas y una creciente especialización en ciberseguridad. Mi trayectoria, forjada en el exigente mundo de la metalurgia, me ha dotado de una disciplina inquebrantable, una atención meticulosa al detalle y una capacidad innata para la resolución de problemas complejos. Estas cualidades, ahora plenamente volcadas al código, me permiten abordar cada proyecto de programación con una precisión ingenieril y una dedicación incansable, transformando desafíos en algoritmos eficientes y sistemas robustos. Mi objetivo es construir el futuro digital, línea a línea, con la misma solidez y fiabilidad que se exige en la ingeniería de materiales.",
+    "projects_button": "Mis Proyectos",
+    "cv_button": "Descargar CV"
   },
   "about": {
     "title": "Sobre Mí",

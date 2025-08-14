@@ -23,10 +23,14 @@ const BlogCard = ({ post, onClick, variants }) => {
       <h3 className="text-xl font-bold mb-2 text-green-400">{post.title}</h3>
       <p className="text-gray-500 text-sm mb-2">{new Date(post.date).toLocaleDateString()}</p>
       <p className="text-gray-400 mb-4">{post.description}</p>
-      <div className="flex justify-end">
-        <div className="text-gray-400 hover:text-green-400 flex items-center">
+      <div className="flex justify-end mt-4">
+        <button 
+          type="button"
+          onClick={onClick} 
+          className="text-gray-400 hover:text-green-400 flex items-center focus:outline-none focus:ring-2 focus:ring-green-500 rounded"
+        >
           Leer más <FaArrowRight className="ml-2" />
-        </div>
+        </button>
       </div>
     </motion.div>
   )

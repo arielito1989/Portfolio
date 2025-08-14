@@ -33,9 +33,9 @@ const Skills = () => {
         animate="visible"
       >
         <motion.div variants={itemVariants} className="bg-gray-800 p-6 rounded-lg shadow-lg shadow-blue-500/30">
-          <h3 className="text-2xl font-bold mb-4 text-blue-400">{t('skills.languages')}</h3>
+          <h3 className="text-2xl font-bold mb-4 text-green-400">{t('skills.languages')}</h3>
           {skills.languages.map((skill, index) => (
-            <ProgressBar key={index} skill={skill.name} percentage={skill.percentage} color={index % 2 === 0 ? 'bg-green-500' : 'bg-blue-500'} />
+            <ProgressBar key={index} skill={skill.name} percentage={skill.percentage} color={index % 2 === 0 ? 'bg-green-500' : 'bg-green-500'} />
           ))}
         </motion.div>
         <motion.div variants={itemVariants} className="bg-gray-800 p-6 rounded-lg shadow-lg shadow-green-500/30">
@@ -45,9 +45,9 @@ const Skills = () => {
           ))}
         </motion.div>
         <motion.div variants={itemVariants} className="bg-gray-800 p-6 rounded-lg shadow-lg shadow-blue-500/30">
-          <h3 className="text-2xl font-bold mb-4 text-blue-400">{t('skills.tools')}</h3>
+          <h3 className="text-2xl font-bold mb-4 text-green-400">{t('skills.tools')}</h3>
           {skills.tools.map((skill, index) => (
-            <ProgressBar key={index} skill={skill.name} percentage={skill.percentage} color={index % 2 === 0 ? 'bg-green-500' : 'bg-blue-500'} />
+            <ProgressBar key={index} skill={skill.name} percentage={skill.percentage} color={index % 2 === 0 ? 'bg-green-500' : 'bg-green-500'} />
           ))}
         </motion.div>
       </motion.div>
