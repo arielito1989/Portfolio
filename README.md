@@ -110,7 +110,22 @@ En el archivo `package.json`, puedes encontrar los siguientes scripts:
 
 ## Despliegue
 
-Este proyecto está listo para ser desplegado en plataformas como [Vercel](https://vercel.com/) o [Netlify](https://www.netlify.com/). Simplemente conecta tu repositorio de Git a una de estas plataformas y sigue las instrucciones para desplegar un proyecto de Vite.
+Este proyecto está optimizado para ser desplegado en [Vercel](https://vercel.com/). Simplemente conecta tu repositorio de Git a Vercel y sigue las instrucciones para desplegar un proyecto de Vite. Vercel detectará automáticamente la configuración y desplegará el sitio.
+
+## Configuración del Formulario de Contacto
+
+Para que el formulario de contacto funcione, utiliza una **Vercel Serverless Function** que envía correos a través de un servicio SMTP. Se recomienda usar [SendGrid](https://sendgrid.com/), que ofrece un plan gratuito.
+
+Una vez que tengas tu cuenta de SendGrid, necesitarás configurar las siguientes variables de entorno en tu proyecto de Vercel:
+
+- `EMAIL_HOST`: El host SMTP de tu proveedor (ej. `smtp.sendgrid.net`).
+- `EMAIL_PORT`: El puerto SMTP (ej. `587` o `465`).
+- `EMAIL_USER`: Tu nombre de usuario de SMTP (generalmente `apikey` para SendGrid).
+- `EMAIL_PASS`: Tu contraseña o API key de SMTP.
+- `EMAIL_FROM`: La dirección de correo desde la que se enviarán los mensajes (debe ser una dirección verificada en tu proveedor).
+- `EMAIL_TO`: La dirección de correo donde recibirás los mensajes del formulario.
+
+Estas variables se deben configurar en el panel de control de tu proyecto en Vercel, en la sección `Settings > Environment Variables`.
 
 ## Hoja de Ruta
 

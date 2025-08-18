@@ -27,10 +27,10 @@ const ProjectCard = ({ project, variants }) => {
         <p className="text-gray-400 mb-4">{project.description}</p>
         <div className="flex flex-wrap gap-2 mb-4">
           {project.technologies.map((tech, index) => (
-            <span key={index} className={`bg-gray-700 px-2 py-1 rounded-full text-sm ${index % 2 === 0 ? 'text-green-400' : 'text-green-400'}`}>{tech}</span>
+            <span key={index} className="bg-gray-700 px-2 py-1 rounded-full text-sm text-green-400">{tech}</span>
           ))}
         </div>
-        <div className="flex justify-between">
+        <div className="flex justify-end gap-4">
           <a href={project.github} target="_blank" rel="noreferrer" className="text-gray-400 hover:text-green-400 focus:outline-none focus:ring-2 focus:ring-green-400 rounded"><FaGithub size={30} /></a>
           {project.demo && <a href={project.demo} target="_blank" rel="noreferrer" className="text-gray-400 hover:text-green-400 focus:outline-none focus:ring-2 focus:ring-green-400 rounded"><FaExternalLinkAlt size={30} /></a>}
         </div>

@@ -1,17 +1,19 @@
 
-import { useState, useEffect, useRef } from 'react'; // Añadir useEffect y useRef
+import { useState, useEffect, useRef } from 'react';
 import { useForm } from 'react-hook-form'
 import { FaLinkedin, FaEnvelope, FaGithub, FaWhatsapp } from 'react-icons/fa'
+import Section from '../ui/Section'
 import { motion } from 'framer-motion'
 import SectionTitle from '../ui/SectionTitle'
 import { useTranslation } from 'react-i18next'
+import { itemVariants } from '../../styles/animations'
 
 const Contact = () => {
   const { t } = useTranslation();
-  const { register, handleSubmit, reset, formState: { errors } } = useForm(); // Añadir reset
+  const { register, handleSubmit, reset, formState: { errors } } = useForm();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitMessage, setSubmitMessage] = useState(null);
-  const [messageType, setMessageType] = useState(null); // 'success' or 'error'
+  const [messageType, setMessageType] = useState(null);
   const messageRef = useRef(null);
 
   useEffect(() => {
@@ -20,33 +22,39 @@ const Contact = () => {
 
       const timer = setTimeout(() => {
         setSubmitMessage(null);
-      }, 8000); // El mensaje desaparecerá después de 8 segundos
+      }, 8000);
 
-      return () => clearTimeout(timer); // Limpiar el temporizador si el componente se desmonta
+      return () => clearTimeout(timer);
     }
   }, [submitMessage]);
 
   const onSubmit = async (data) => {
-    // Honeypot check
     if (data.website) {
       console.log("Honeypot field filled, likely a bot.");
-      return; // Stop submission
+      return;
     }
 
     setIsSubmitting(true);
-    setSubmitMessage(null); // Clear previous messages
+    setSubmitMessage(null);
 
     try {
-      // Simular un envío de API
-      await new Promise(resolve => setTimeout(resolve, 2000)); // 2 segundos de retraso
+      const response = await fetch('/api/send-email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+      });
 
-      // Simular éxito
-      setSubmitMessage("¡Mensaje enviado con éxito! Tu solicitud ha sido procesada y estoy revisando los datos. En breve recibirás una confirmación. Gracias por tu interés.");
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+
+      setSubmitMessage("¡Mensaje enviado con éxito! Gracias por contactarme, te responderé lo antes posible.");
       setMessageType('success');
-      reset(); // Limpiar el formulario
+      reset();
     } catch (error) {
-      // Simular error
-      setSubmitMessage("Error al enviar el mensaje. Ha ocurrido un fallo en la transmisión de datos. Por favor, verifica tu conexión o inténtalo de nuevo más tarde. Si el problema persiste, contáctame directamente por LinkedIn o WhatsApp.");
+      setSubmitMessage("Error al enviar el mensaje. Por favor, inténtalo de nuevo más tarde o contáctame directamente por otro medio.");
       setMessageType('error');
     } finally {
       setIsSubmitting(false);
@@ -54,20 +62,18 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-20 bg-gray-900">
-      <SectionTitle>{t('contact.title')}</SectionTitle>
+    <Section id="contact" className="bg-gray-900">
+      <motion.div variants={itemVariants}>
+        <SectionTitle>{t('contact.title')}</SectionTitle>
+      </motion.div>
       <div className="container mx-auto flex flex-col md:flex-row gap-12 items-start">
         
-        {/* Formulario */}
         <motion.div 
           className="md:w-2/3 bg-gray-800 p-8 rounded-lg shadow-lg shadow-blue-500/30"
-          initial={{ x: -100, opacity: 0 }}
-          animate={{ x: 0, opacity: 1 }}
-          transition={{ duration: 0.7, ease: "easeOut" }}
+          variants={itemVariants}
         >
           <h3 className="text-2xl font-bold mb-6 text-green-400">{t('contact.form_title')}</h3>
-          <form onSubmit={handleSubmit(onSubmit)} className="space-y-6" noValidate>
-            {/* Honeypot field */}
+          <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
             <div className="hidden">
               <label htmlFor="website">Website</label>
               <input type="text" id="website" {...register("website")} autoComplete="off" tabIndex="-1" />
@@ -128,19 +134,16 @@ const Contact = () => {
               className="w-full bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-4 rounded-lg transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-green-400"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              disabled={isSubmitting} // Deshabilitar durante el envío
+              disabled={isSubmitting}
             >
               {isSubmitting ? 'Enviando...' : t('contact.send')}
             </motion.button>
           </form>
         </motion.div>
 
-        {/* Redes Sociales */}
         <motion.div 
           className="md:w-1/3 bg-gray-800 p-8 rounded-lg shadow-lg shadow-green-500/30"
-          initial={{ x: 100, opacity: 0 }}
-          animate={{ x: 0, opacity: 1 }}
-          transition={{ duration: 0.7, ease: "easeOut", delay: 0.2 }}
+          variants={itemVariants}
         >
           <h3 className="text-2xl font-bold mb-6 text-green-400">{t('contact.other_contact')}</h3>
           <div className="space-y-4">
@@ -164,7 +167,7 @@ const Contact = () => {
         </motion.div>
 
       </div>
-    </section>
+    </Section>
   )
 }
 

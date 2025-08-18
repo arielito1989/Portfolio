@@ -1,55 +1,89 @@
-
-import ProgressBar from '../ui/ProgressBar'
 import { motion } from 'framer-motion'
 import skills from '../../data/skills.json'
 import SectionTitle from '../ui/SectionTitle'
 import { useTranslation } from 'react-i18next'
+import * as FaIcons from 'react-icons/fa'
+import * as SiIcons from 'react-icons/si'
+
+const allIcons = { ...FaIcons, ...SiIcons };
+
+const DynamicIcon = ({ name }) => {
+  const IconComponent = allIcons[name];
+
+  if (!IconComponent) {
+    return null;
+  }
+
+  return <IconComponent size={48} className="mb-2" />;
+};
+
 
 const containerVariants = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
     transition: {
-      staggerChildren: 0.3,
+      staggerChildren: 0.2,
+      delayChildren: 0.3,
     },
   },
 }
 
-const itemVariants = {
-  hidden: { x: -100, opacity: 0 },
-  visible: { x: 0, opacity: 1 },
+const categoryVariants = {
+  hidden: { y: 20, opacity: 0 },
+  visible: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.1,
+    },
+  },
+}
+
+const skillVariants = {
+  hidden: { scale: 0.5, opacity: 0 },
+  visible: { scale: 1, opacity: 1 },
 }
 
 const Skills = () => {
   const { t } = useTranslation();
+  const skillCategories = Object.entries(skills);
 
   return (
     <section id="skills" className="py-20 bg-gray-900 px-4">
       <SectionTitle>{t('skills.title')}</SectionTitle>
-      <motion.div 
-        className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 container mx-auto"
+      <motion.div
+        className="container mx-auto"
         variants={containerVariants}
         initial="hidden"
-        animate="visible"
+        whileInView="visible"
+        viewport={{ once: true }}
       >
-        <motion.div variants={itemVariants} className="bg-gray-800 p-6 rounded-lg shadow-lg shadow-blue-500/30">
-          <h3 className="text-2xl font-bold mb-4 text-green-400">{t('skills.languages')}</h3>
-          {skills.languages.map((skill, index) => (
-            <ProgressBar key={index} skill={skill.name} percentage={skill.percentage} color={index % 2 === 0 ? 'bg-green-500' : 'bg-green-500'} />
-          ))}
-        </motion.div>
-        <motion.div variants={itemVariants} className="bg-gray-800 p-6 rounded-lg shadow-lg shadow-green-500/30">
-          <h3 className="text-2xl font-bold mb-4 text-green-400">{t('skills.frameworks')}</h3>
-          {skills.frameworks.map((skill, index) => (
-            <ProgressBar key={index} skill={skill.name} percentage={skill.percentage} color={index % 2 === 0 ? 'bg-blue-500' : 'bg-green-500'} />
-          ))}
-        </motion.div>
-        <motion.div variants={itemVariants} className="bg-gray-800 p-6 rounded-lg shadow-lg shadow-blue-500/30">
-          <h3 className="text-2xl font-bold mb-4 text-green-400">{t('skills.tools')}</h3>
-          {skills.tools.map((skill, index) => (
-            <ProgressBar key={index} skill={skill.name} percentage={skill.percentage} color={index % 2 === 0 ? 'bg-green-500' : 'bg-green-500'} />
-          ))}
-        </motion.div>
+        {skillCategories.map(([category, skillList]) => (
+          <motion.div
+            key={category}
+            className="mb-12"
+            variants={categoryVariants}
+          >
+            <h3 className="text-3xl font-bold mb-8 text-center text-green-400">{t(`skills.${category}`)}</h3>
+            <motion.div
+              className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 text-center"
+              variants={categoryVariants}
+            >
+              {skillList.map((skill) => (
+                <motion.div
+                  key={skill.name}
+                  className="flex flex-col items-center justify-center p-4 bg-gray-800 rounded-lg shadow-lg hover:shadow-green-500/50 transition-shadow duration-300"
+                  variants={skillVariants}
+                  whileHover={{ y: -5 }}
+                >
+                  <DynamicIcon name={skill.icon} />
+                  <span className="text-lg">{skill.name}</span>
+                </motion.div>
+              ))}
+            </motion.div>
+          </motion.div>
+        ))}
       </motion.div>
     </section>
   )

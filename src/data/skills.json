@@ -1,21 +1,29 @@
 {
   "languages": [
-    { "name": "HTML", "percentage": 95 },
-    { "name": "CSS", "percentage": 90 },
-    { "name": "JavaScript", "percentage": 85 },
-    { "name": "Java", "percentage": 75 },
-    { "name": "Python", "percentage": 80 }
+    { "name": "HTML", "icon": "FaHtml5" },
+    { "name": "CSS", "icon": "FaCss3Alt" },
+    { "name": "JavaScript", "icon": "FaJsSquare" },
+    { "name": "TypeScript", "icon": "SiTypescript" },
+    { "name": "Java", "icon": "FaJava" },
+    { "name": "Python", "icon": "FaPython" },
+    { "name": "SQL", "icon": "FaDatabase" }
   ],
   "frameworks": [
-    { "name": "React", "percentage": 85 },
-    { "name": "Node.js", "percentage": 70 },
-    { "name": "Tailwind CSS", "percentage": 90 },
-    { "name": "Express.js", "percentage": 70 }
+    { "name": "React", "icon": "FaReact" },
+    { "name": "Next.js", "icon": "SiNextdotjs" },
+    { "name": "Node.js", "icon": "FaNodeJs" },
+    { "name": "Express.js", "icon": "SiExpress" },
+    { "name": "NestJS", "icon": "SiNestjs" },
+    { "name": "Tailwind CSS", "icon": "SiTailwindcss" },
+    { "name": "Prisma", "icon": "SiPrisma" }
   ],
   "tools": [
-    { "name": "Git", "percentage": 90 },
-    { "name": "GitHub", "percentage": 90 },
-    { "name": "Vercel", "percentage": 85 },
-    { "name": "Netlify", "percentage": 80 }
+    { "name": "Git", "icon": "FaGitAlt" },
+    { "name": "GitHub", "icon": "FaGithub" },
+    { "name": "Docker", "icon": "FaDocker" },
+    { "name": "Postman", "icon": "SiPostman" },
+    { "name": "Figma", "icon": "FaFigma" },
+    { "name": "Vercel", "icon": "SiVercel" },
+    { "name": "Netlify", "icon": "SiNetlify" }
   ]
 }
