@@ -1,5 +1,5 @@
 
-import perfil from '/images/perfil.png'
+import perfil from '/images/perfil.jpeg'
 import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa'
 import { useTranslation } from 'react-i18next';
 import { TypeAnimation } from 'react-type-animation';
