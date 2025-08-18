@@ -7,14 +7,16 @@ import * as SiIcons from 'react-icons/si'
 
 const allIcons = { ...FaIcons, ...SiIcons };
 
-const DynamicIcon = ({ name }) => {
+const DynamicIcon = ({ name, color }) => {
   const IconComponent = allIcons[name];
 
   if (!IconComponent) {
     return null;
   }
 
-  return <IconComponent size={48} className="mb-2" />;
+  const style = color ? { color } : {};
+
+  return <IconComponent size={48} className="mb-2" style={style} />;
 };
 
 
@@ -77,7 +79,7 @@ const Skills = () => {
                   variants={skillVariants}
                   whileHover={{ y: -5 }}
                 >
-                  <DynamicIcon name={skill.icon} />
+                  <DynamicIcon name={skill.icon} color={skill.color} />
                   <span className="text-lg">{skill.name}</span>
                 </motion.div>
               ))}
