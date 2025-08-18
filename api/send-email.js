@@ -24,6 +24,7 @@ export default async function handler(req, res) {
   const mailOptions = {
     from: process.env.EMAIL_FROM,
     to: process.env.EMAIL_TO,
+    replyTo: email,
     subject: `New message from ${name} on your portfolio`,
     text: `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`,
     html: `<p><strong>Name:</strong> ${name}</p>
