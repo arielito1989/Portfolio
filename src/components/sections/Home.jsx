@@ -5,7 +5,11 @@ import { useTranslation } from 'react-i18next';
 import { TypeAnimation } from 'react-type-animation';
 
 const Home = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+
+  const cvPath = i18n.language === 'es' 
+    ? '/CV_Ariel_Nogueroles.pdf' 
+    : '/CV_Ariel_english.pdf';
 
   return (
     <section id="home" className="flex flex-col md:flex-row items-center justify-center min-h-screen pt-20 px-4 container mx-auto">
@@ -53,14 +57,14 @@ const Home = () => {
         <div className="flex gap-4 mt-8 justify-center md:justify-start">
           <a 
             href="#projects"
-            className="bg-green-500 text-white font-bold py-3 px-6 rounded-lg hover:bg-green-600 transition-all duration-300 transform hover:scale-105"
+            className="bg-green-500 text-white font-bold py-3 px-6 rounded-lg hover:bg-green-600 transition-all duration-300 transform hover:scale-105 w-40 text-center"
           >
             {t('home.projects_button')}
           </a>
           <a 
-            href="/CV_Ariel_Nogueroles.pdf" 
+            href={cvPath} 
             download
-            className="bg-gray-700 text-white font-bold py-3 px-6 rounded-lg hover:bg-gray-600 transition-all duration-300 transform hover:scale-105"
+            className="bg-gray-700 text-white font-bold py-3 px-6 rounded-lg hover:bg-gray-600 transition-all duration-300 transform hover:scale-105 w-40 text-center"
           >
             {t('home.cv_button')}
           </a>
