@@ -10,6 +10,10 @@ const Home = () => {
   const cvPath = i18n.language === 'es' 
     ? '/CV_Ariel_Nogueroles.pdf' 
     : '/CV_Ariel_english.pdf';
+  
+  const cvFileName = i18n.language === 'es' 
+    ? 'CV_Ariel_Nogueroles.pdf' 
+    : 'CV_Ariel_english.pdf';
 
   return (
     <section id="home" className="flex flex-col md:flex-row items-center justify-center min-h-screen pt-20 px-4 container mx-auto">
@@ -63,7 +67,7 @@ const Home = () => {
           </a>
           <a 
             href={cvPath} 
-            download
+            download={cvFileName}
             className="bg-gray-700 text-white font-bold py-3 px-6 rounded-lg hover:bg-gray-600 transition-all duration-300 transform hover:scale-105 w-40 text-center"
           >
             {t('home.cv_button')}
