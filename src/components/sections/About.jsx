@@ -1,4 +1,5 @@
-import certificates from '../../data/certificates.json'
+import certificatesEs from '../../data/certificates.json'
+import certificatesEn from '../../data/certificates.en.json'
 import SectionTitle from '../ui/SectionTitle'
 import CertificateCard from '../ui/CertificateCard'
 import { useTranslation } from 'react-i18next'
@@ -18,7 +19,9 @@ const itemVariants = {
 };
 
 const About = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  
+  const certificates = i18n.language === 'es' ? certificatesEs : certificatesEn;
 
   return (
     <Section id="about" className="bg-gray-100 dark:bg-gray-800">
