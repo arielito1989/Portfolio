@@ -1,8 +1,8 @@
 {
   "home": {
     "greeting": "Ariel Nogueroles",
-    "role": "Programmer & Cybersecurity Student",
-    "bio": "I am Ariel Nogueroles, a software developer with a profound passion for creating technological solutions and a growing specialization in cybersecurity. My journey, forged in the demanding world of metallurgy, has endowed me with an unbreakable discipline, meticulous attention to detail, and an innate ability to solve complex problems. These qualities, now fully dedicated to code, allow me to approach each programming project with engineering precision and tireless dedication, transforming challenges into efficient algorithms and robust systems. My goal is to build the digital future, line by line, with the same solidity and reliability required in materials engineering.",
+    "role": "Full Stack Developer & Technical Consultant",
+    "bio": "Full Stack Developer in training with years of experience leading teams and optimizing administrative processes. Specialist in transforming manual workflows into efficient digital solutions, achieving time reductions of up to 75%. My background in metallurgy has equipped me with discipline and attention to detail, qualities I now apply to software development and cloud infrastructure configuration.",
     "projects_button": "My Projects",
     "cv_button": "Download CV"
   },
@@ -18,9 +18,9 @@
   },
   "skills": {
     "title": "Technical Skills",
-    "languages": "Languages",
-    "frameworks": "Frameworks and Libraries",
-    "tools": "Tools"
+    "languages": "Programming Languages",
+    "frameworks": "Frontend",
+    "tools": "Backend, Databases & Tools"
   },
   "projects": {
     "title": "Projects"

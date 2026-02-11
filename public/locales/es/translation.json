@@ -1,8 +1,8 @@
 {
   "home": {
     "greeting": "Ariel Nogueroles",
-    "role": "Programador & Estudiante de Ciberseguridad",
-    "bio": "Soy Ariel Nogueroles, un desarrollador de software con una profunda pasión por la creación de soluciones tecnológicas y una creciente especialización en ciberseguridad. Mi trayectoria, forjada en el exigente mundo de la metalurgia, me ha dotado de una disciplina inquebrantable, una atención meticulosa al detalle y una capacidad innata para la resolución de problemas complejos. Estas cualidades, ahora plenamente volcadas al código, me permiten abordar cada proyecto de programación con una precisión ingenieril y una dedicación incansable, transformando desafíos en algoritmos eficientes y sistemas robustos. Mi objetivo es construir el futuro digital, línea a línea, con la misma solidez y fiabilidad que se exige en la ingeniería de materiales.",
+    "role": "Desarrollador Full Stack & Consultor Técnico",
+    "bio": "Desarrollador Full Stack en formación con años de experiencia liderando equipos y optimizando procesos administrativos. Especialista en transformar flujos de trabajo manuales en soluciones digitales eficientes, logrando reducciones de tiempo de hasta un 75%. Mi trayectoria en la metalurgia me ha dotado de disciplina y atención al detalle, cualidades que ahora aplico al desarrollo de software y la configuración de infraestructuras cloud.",
     "projects_button": "Mis Proyectos",
     "cv_button": "Descargar CV"
   },
@@ -18,9 +18,9 @@
   },
   "skills": {
     "title": "Habilidades Técnicas",
-    "languages": "Lenguajes",
-    "frameworks": "Frameworks y Librerías",
-    "tools": "Herramientas"
+    "languages": "Lenguajes de Programación",
+    "frameworks": "Frontend",
+    "tools": "Backend, Bases de Datos & Herramientas"
   },
   "projects": {
     "title": "Proyectos"

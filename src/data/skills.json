@@ -1,29 +1,26 @@
 {
   "languages": [
-    { "name": "HTML", "icon": "FaHtml5", "color": "#E34F26" },
-    { "name": "CSS", "icon": "FaCss3Alt", "color": "#1572B6" },
-    { "name": "JavaScript", "icon": "FaJsSquare", "color": "#F7DF1E" },
-    { "name": "TypeScript", "icon": "SiTypescript", "color": "#3178C6" },
-    { "name": "Java", "icon": "FaJava", "color": "#007396" },
     { "name": "Python", "icon": "FaPython", "color": "#3776AB" },
-    { "name": "SQL", "icon": "FaDatabase", "color": "#00758F" }
+    { "name": "JavaScript", "icon": "FaJsSquare", "color": "#F7DF1E" },
+    { "name": "Java", "icon": "FaJava", "color": "#007396" },
+    { "name": "C#", "icon": "SiCsharp", "color": "#239120" },
+    { "name": "TypeScript", "icon": "SiTypescript", "color": "#3178C6" }
   ],
   "frameworks": [
+    { "name": "HTML5", "icon": "FaHtml5", "color": "#E34F26" },
+    { "name": "CSS3", "icon": "FaCss3Alt", "color": "#1572B6" },
     { "name": "React", "icon": "FaReact", "color": "#61DAFB" },
-    { "name": "Next.js", "icon": "SiNextdotjs" },
-    { "name": "Node.js", "icon": "FaNodeJs", "color": "#339933" },
-    { "name": "Express.js", "icon": "SiExpress" },
-    { "name": "NestJS", "icon": "SiNestjs", "color": "#E0234E" },
-    { "name": "Tailwind CSS", "icon": "SiTailwindcss", "color": "#06B6D4" },
-    { "name": "Prisma", "icon": "SiPrisma" }
+    { "name": "Vite", "icon": "SiVite", "color": "#646CFF" },
+    { "name": "Tailwind CSS", "icon": "SiTailwindcss", "color": "#06B6D4" }
   ],
   "tools": [
+    { "name": "MySQL", "icon": "SiMysql", "color": "#4479A1" },
+    { "name": "PostgreSQL", "icon": "SiPostgresql", "color": "#4169E1" },
+    { "name": "MongoDB", "icon": "SiMongodb", "color": "#47A248" },
+    { "name": "Oracle Cloud", "icon": "SiOracle", "color": "#F80000" },
     { "name": "Git", "icon": "FaGitAlt", "color": "#F05032" },
     { "name": "GitHub", "icon": "FaGithub" },
-    { "name": "Docker", "icon": "FaDocker", "color": "#2496ED" },
-    { "name": "Postman", "icon": "SiPostman", "color": "#FF6C37" },
-    { "name": "Figma", "icon": "FaFigma", "color": "#F24E1E" },
     { "name": "Vercel", "icon": "SiVercel" },
-    { "name": "Netlify", "icon": "SiNetlify", "color": "#00C7B7" }
+    { "name": "Excel", "icon": "SiMicrosoftexcel", "color": "#217346" }
   ]
 }

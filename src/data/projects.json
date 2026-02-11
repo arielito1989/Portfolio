@@ -2,11 +2,19 @@
 [
   {
     "title": "Calderas y Montajes",
-    "description": "Sitio web corporativo para empresa de servicios industriales especializados en calderas, montajes y mantenimiento industrial.",
+    "description": "Sitio web corporativo para empresa metalúrgica especializada en calderas, montajes y mantenimiento industrial. Diseño responsive y optimizado para SEO.",
     "technologies": ["HTML", "CSS", "JavaScript"],
     "image": "/images/calderasym.png",
     "github": null,
     "demo": "https://www.calderasymontajes.com.ar/"
+  },
+  {
+    "title": "JKC Servicios Industriales",
+    "description": "Sitio web corporativo para empresa metalúrgica de servicios industriales. Incluye galería de proyectos y formulario de contacto.",
+    "technologies": ["HTML", "CSS", "JavaScript"],
+    "image": "/images/jkc.png",
+    "github": null,
+    "demo": null
   },
   {
     "title": "Conversor de Monedas en Java",
