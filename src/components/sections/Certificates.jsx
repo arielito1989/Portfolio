@@ -1,6 +1,7 @@
 
 import { useState } from 'react'
-import certificates from '../../data/certificates.json'
+import certificatesEs from '../../data/certificates.json'
+import certificatesEn from '../../data/certificates.en.json'
 import CertificateCard from '../ui/CertificateCard'
 import Modal from '../ui/Modal'
 import Section from '../ui/Section'
@@ -10,8 +11,10 @@ import { useTranslation } from 'react-i18next'
 import { itemVariants } from '../../styles/animations'
 
 const Certificates = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const [selectedCert, setSelectedCert] = useState(null)
+  
+  const certificates = i18n.language === 'es' ? certificatesEs : certificatesEn;
 
   return (
     <Section id="certificates">
@@ -34,7 +37,7 @@ const Certificates = () => {
             
             {selectedCert.learned && selectedCert.learned.length > 0 && (
               <div className="mb-4">
-                <h4 className="text-xl font-semibold mb-2 text-green-400">Lo que aprendí:</h4>
+                <h4 className="text-xl font-semibold mb-2 text-green-400">{i18n.language === 'es' ? 'Lo que aprendí:' : 'What I learned:'}</h4>
                 <ul className="list-disc list-inside text-gray-300">
                   {selectedCert.learned.map((item, index) => (
                     <li key={index}>{item}</li>
@@ -45,7 +48,7 @@ const Certificates = () => {
 
             {selectedCert.tools_used && selectedCert.tools_used.length > 0 && (
               <div className="mb-4">
-                <h4 className="text-xl font-semibold mb-2 text-green-400">Herramientas y Tecnologías:</h4>
+                <h4 className="text-xl font-semibold mb-2 text-green-400">{i18n.language === 'es' ? 'Herramientas y Tecnologías:' : 'Tools and Technologies:'}</h4>
                 <ul className="list-disc list-inside text-gray-300">
                   {selectedCert.tools_used.map((item, index) => (
                     <li key={index}>{item}</li>
@@ -56,7 +59,7 @@ const Certificates = () => {
 
             {selectedCert.experience_gained && selectedCert.experience_gained.length > 0 && (
               <div className="mb-4">
-                <h4 className="text-xl font-semibold mb-2 text-green-400">Experiencia Adquirida:</h4>
+                <h4 className="text-xl font-semibold mb-2 text-green-400">{i18n.language === 'es' ? 'Experiencia Adquirida:' : 'Experience Gained:'}</h4>
                 <ul className="list-disc list-inside text-gray-300">
                   {selectedCert.experience_gained.map((item, index) => (
                     <li key={index}>{item}</li>
@@ -67,7 +70,7 @@ const Certificates = () => {
 
             {selectedCert.benefits && selectedCert.benefits.length > 0 && (
               <div className="mb-4">
-                <h4 className="text-xl font-semibold mb-2 text-green-400">Beneficios Clave:</h4>
+                <h4 className="text-xl font-semibold mb-2 text-green-400">{i18n.language === 'es' ? 'Beneficios Clave:' : 'Key Benefits:'}</h4>
                 <ul className="list-disc list-inside text-gray-300">
                   {selectedCert.benefits.map((item, index) => (
                     <li key={index}>{item}</li>

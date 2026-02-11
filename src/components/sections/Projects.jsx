@@ -1,5 +1,6 @@
 
-import projects from '../../data/projects.json'
+import projectsEs from '../../data/projects.json'
+import projectsEn from '../../data/projects.en.json'
 import ProjectCard from '../ui/ProjectCard'
 import Section from '../ui/Section'
 import { motion } from 'framer-motion'
@@ -8,7 +9,9 @@ import { useTranslation } from 'react-i18next'
 import { itemVariants } from '../../styles/animations'
 
 const Projects = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  
+  const projects = i18n.language === 'es' ? projectsEs : projectsEn;
 
   return (
     <Section id="projects" className="bg-gray-900">

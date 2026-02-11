@@ -1,0 +1,305 @@
+[
+  {
+    "title": "Java Programming: Currency Converter Challenge",
+    "issuer": "Alura Latam",
+    "date": "2025",
+    "description": "Certification in Java fundamentals and application development, with emphasis on creating a currency converter.",
+    "logo": "/assets/certificates/alura.png",
+    "description_long": "This certificate validates my ability to develop robust solutions in Java, applying Object-Oriented Programming (OOP) principles in a practical environment. Through the 'Currency Converter Challenge', I gained experience in consuming external APIs for real-time data, exception handling for greater application resilience, and building intuitive user interfaces. This project allowed me to consolidate my knowledge in system integration and efficient data management, demonstrating my ability to transform complex requirements into clear and operational functionalities. The experience provided me with a solid foundation in the software development lifecycle, from design to implementation and testing.",
+    "learned": [
+      "Design and development of Java applications using OOP.",
+      "Integration with RESTful APIs to obtain external data (exchange rates).",
+      "Advanced exception handling and user input validation.",
+      "Implementation of business logic for accurate currency conversions.",
+      "Use of data structures for efficient information management.",
+      "Clean code principles and refactoring for maintainable code."
+    ],
+    "tools_used": [
+      "Java Development Kit (JDK)",
+      "Integrated Development Environment (IDE) like IntelliJ IDEA or Eclipse",
+      "Build tools (Maven/Gradle for dependency management)",
+      "Git and GitHub for version control and collaboration",
+      "Postman or similar tools for API testing",
+      "ExchangeRate API (or similar) for currency data"
+    ],
+    "experience_gained": [
+      "Development of a complete project from conception to implementation.",
+      "Solving complex problems and debugging Java code.",
+      "Working with external data and its processing in an application.",
+      "Improvement of programming logic and code efficiency.",
+      "Application of agile methodologies in a short-duration project."
+    ],
+    "benefits": [
+      "Ability to develop functional and efficient Java applications.",
+      "Skill to integrate external services and handle real-time data.",
+      "Deep understanding of OOP and its practical application.",
+      "Preparation for junior Java or backend developer roles."
+    ]
+  },
+  {
+    "title": "Programming Logic: Secret Friend Challenge (HTML, CSS, JS)",
+    "issuer": "Alura Latam",
+    "date": "2025",
+    "description": "Practical project in programming logic and frontend development with HTML, CSS, and JavaScript.",
+    "logo": "/assets/certificates/alura.png",
+    "description_long": "This 10-hour challenge was a practical immersion in applying programming logic to solve a real problem: the 'secret friend' draw. I used HTML to structure the interface, CSS for an attractive and responsive design, and JavaScript to implement the core logic of the draw, including DOM manipulation and event management. This project allowed me to consolidate my frontend development skills, demonstrating my ability to transform ideas into interactive and functional web applications. It was an excellent opportunity to reinforce my knowledge in the fundamental triad of web development.",
+    "learned": [
+      "Structuring web content with semantic HTML.",
+      "Design and styling of user interfaces with CSS (including responsiveness).",
+      "Implementation of programming logic with JavaScript.",
+      "DOM manipulation to create dynamic interactions.",
+      "Event and function management in JavaScript.",
+      "Development of algorithms for random draws and unique assignments."
+    ],
+    "tools_used": [
+      "HTML5",
+      "CSS3",
+      "JavaScript (ES6+)",
+      "Visual Studio Code (or similar code editor)",
+      "Web browsers (Chrome DevTools for debugging)",
+      "Git and GitHub (for project version control)"
+    ],
+    "experience_gained": [
+      "Development of an interactive web application from scratch.",
+      "Practical application of programming logic concepts.",
+      "Creation of attractive and functional user interfaces.",
+      "Solving assignment and randomness problems.",
+      "Improvement of frontend code debugging skills."
+    ],
+    "benefits": [
+      "Mastery of HTML, CSS, and JavaScript fundamentals for web development.",
+      "Ability to build interactive and dynamic web applications.",
+      "Understanding of programming logic applied to real problems.",
+      "Preparation for junior frontend developer roles."
+    ]
+  },
+  {
+    "title": "Python Essentials 1: Programming Fundamentals",
+    "issuer": "Cisco Networking Academy & OpenEDG Python Institute",
+    "date": "2024",
+    "description": "Fundamental Python certification covering from basic concepts to PCEP certification preparation.",
+    "logo": "/assets/certificates/python.png",
+    "description_long": "This intensive 30-hour course provided me with a solid foundation in Python programming, essential for any aspiring developer. Through 30 hands-on labs, I mastered algorithmic thinking, procedural programming, and coding best practices. The training thoroughly prepared me for the PCEP (Certified Entry-Level Python Programmer) certification, validating my ability to design, develop, and debug Python scripts. This experience was crucial for developing analytical thinking and efficiently solving problems, laying the groundwork for more complex projects in the future.",
+    "learned": [
+      "Introduction to Python and computer programming.",
+      "Data types, variables, operators, and basic I/O operations in Python.",
+      "Control flow: Boolean values, conditional execution, and loops.",
+      "Data structures: lists, tuples, and dictionaries, and their processing.",
+      "Functions, exception handling, and data processing.",
+      "Principles of design, development, and debugging of Python scripts."
+    ],
+    "tools_used": [
+      "Python 3 (interpreter)",
+      "IDLE (Integrated Development and Learning Environment)",
+      "Code editors (VS Code, PyCharm)",
+      "NetAcad virtual lab environment",
+      "Git concepts for version control (although not directly used in the course, it is an essential complementary tool)"
+    ],
+    "experience_gained": [
+      "Development of Python scripts for basic task automation.",
+      "Solving algorithmic problems using Python.",
+      "Effective debugging of Python code.",
+      "Application of good programming practices from the start.",
+      "Preparation for entry-level Python certification exams."
+    ],
+    "benefits": [
+      "Mastery of Python fundamentals to start a development career.",
+      "Ability to write clean, efficient, and debuggable Python code.",
+      "Understanding of algorithmic thinking and programming logic.",
+      "Solid foundation for learning more advanced Python frameworks and libraries.",
+      "Recognized certification that validates Python programming skills."
+    ]
+  },
+  {
+    "title": "Introduction to Cybersecurity",
+    "issuer": "Cisco Networking Academy",
+    "date": "2024",
+    "description": "Essential cybersecurity fundamentals to protect data and systems in a digital world.",
+    "logo": "/assets/certificates/ciber.png",
+    "description_long": "This 6-hour course, complemented by 7 hands-on labs, provided me with a fundamental understanding of cybersecurity principles and challenges. I explored the most common cyber threats, network vulnerabilities, and strategies to protect data privacy and confidentiality. The training equipped me with cyber best practices, both at personal and organizational levels, and introduced me to various career paths in the cybersecurity field. This experience was crucial for developing a proactive security mindset and understanding the importance of information protection in today's digital environment.",
+    "learned": [
+      "Fundamental cybersecurity concepts and their importance.",
+      "Identification and analysis of cyberattacks, concepts, and techniques.",
+      "Strategies to protect personal data and online privacy.",
+      "Security measures to protect an organization's information and assets.",
+      "Exploration of career opportunities in the cybersecurity field.",
+      "Detection of threats and network vulnerabilities."
+    ],
+    "tools_used": [
+      "Cisco NetAcad learning platform",
+      "Network simulation tools (e.g., Packet Tracer, although not directly mentioned, it is common in Cisco courses)",
+      "Operating system concepts (Windows, Linux) to understand vulnerabilities",
+      "Web browsers and basic security tools (e.g., VPN, antivirus)"
+    ],
+    "experience_gained": [
+      "Analysis of cyberattack scenarios and their impacts.",
+      "Application of security measures to protect systems and data.",
+      "Identification of security risks in everyday and business environments.",
+      "Development of critical awareness about digital security.",
+      "Understanding the importance of privacy and confidentiality."
+    ],
+    "benefits": [
+      "Solid knowledge of cybersecurity fundamentals.",
+      "Ability to identify and mitigate basic security risks.",
+      "Preparation for entry-level roles in cybersecurity or to complement other IT areas.",
+      "Development of a proactive security mindset.",
+      "Understanding of best practices for information protection."
+    ]
+  },
+  {
+    "title": "Git and GitHub: Professional Version Control",
+    "issuer": "Alura Latam",
+    "date": "2025",
+    "description": "Mastery of Git and GitHub for efficient repository management, team collaboration, and version control.",
+    "logo": "/assets/certificates/alura.png",
+    "description_long": "This 6-hour course provided me with a deep and practical understanding of Git and GitHub, essential tools for modern software development. I learned to manage repositories, make effective commits, work collaboratively with teams, and handle branching and merging efficiently. The training covered from initial GitHub account setup to advanced techniques for maintaining a clean and organized version history. This skill is fundamental for any development project, ensuring code integrity and facilitating contribution in professional environments.",
+    "learned": [
+      "Configuration and management of local and remote Git repositories on GitHub.",
+      "Making atomic and meaningful commits for a clear version history.",
+      "Collaborative workflows: clone, pull, push, fork, and pull requests.",
+      "Creation and management of branches for new feature development and bug fixes.",
+      "Efficient resolution of merge conflicts.",
+      "Use of VS Code and other tools for Git integration.",
+      "Advanced Git concepts to optimize version control."
+    ],
+    "tools_used": [
+      "Git (command line)",
+      "GitHub (web platform)",
+      "Visual Studio Code (Git integration)",
+      "Terminal/Command line"
+    ],
+    "experience_gained": [
+      "Management of software projects with distributed version control.",
+      "Effective collaboration in development teams using GitHub.",
+      "Maintenance of a clean and auditable code history.",
+      "Implementation of best practices in development workflow.",
+      "Resolution of common version control issues."
+    ],
+    "benefits": [
+      "Essential skill for any software developer role.",
+      "Ability to work efficiently in development teams.",
+      "Ensure source code integrity and traceability.",
+      "Improved productivity and reduced development errors.",
+      "Preparation to contribute to open-source projects."
+    ]
+  },
+  {
+    "title": "Complete Training in Java Development and Professional Skills",
+    "issuer": "Alura Latam",
+    "date": "2025",
+    "description": "Comprehensive certification covering advanced Java development, artificial intelligence, Spring Framework, and key professional skills.",
+    "logo": "/assets/certificates/alura.png",
+    "description_long": "This certificate represents the culmination of an intensive 308-hour program, where I have delved into software development with Java, from the fundamentals of Object-Oriented Programming to the implementation of enterprise solutions with Spring Framework. Additionally, I have explored the integration of Artificial Intelligence in Java applications and have strengthened my soft skills in personal development, entrepreneurship, agility, and professional leadership. This comprehensive training has prepared me to face complex challenges in the world of software development, combining advanced technical knowledge with a growth mindset and adaptability.",
+    "learned": [
+      "Advanced Java development: OOP, data structures, algorithms, and design patterns.",
+      "Enterprise frameworks: Spring Boot, Spring Data JPA, Spring Security for robust and scalable applications.",
+      "Artificial Intelligence in Java: Basic concepts, library integration, and development of intelligent solutions.",
+      "Agile methodologies and project management: Scrum, Kanban, and practices for high-performance teams.",
+      "Entrepreneurship skills: Ideation, business model validation, and launch strategies.",
+      "Personal and professional development: Effective communication, leadership, conflict resolution, and adaptability."
+    ],
+    "tools_used": [
+      "Java Development Kit (JDK)",
+      "Integrated Development Environment (IDE) like IntelliJ IDEA or Eclipse",
+      "Build tools (Maven/Gradle for dependency management)",
+      "Relational databases (e.g., MySQL, PostgreSQL) and ORMs (Hibernate)",
+      "Git and GitHub for version control and collaboration",
+      "Postman or similar tools for API testing",
+      "ExchangeRate API (or similar) for currency data"
+    ],
+    "experience_gained": [
+      "Design and development of RESTful APIs with Spring Boot.",
+      "Implementation of data persistence with JPA and Hibernate.",
+      "Building secure applications with Spring Security.",
+      "Development of microservices and distributed architectures.",
+      "Application of AI principles in Java projects.",
+      "Management of software projects from conception to delivery.",
+      "Effective collaboration in multidisciplinary teams."
+    ],
+    "benefits": [
+      "Mastery of Java for backend and enterprise development.",
+      "Ability to integrate external services and handle real-time data.",
+      "Deep understanding of OOP and its practical application.",
+      "Strengthened soft skills for professional success.",
+      "Preparation for Java Fullstack or Senior Backend developer roles."
+    ]
+  },
+  {
+    "title": "Java and Spring Framework Training: Enterprise Development",
+    "issuer": "Alura Latam",
+    "date": "2025",
+    "description": "Advanced training in Java and the Spring ecosystem to build robust and scalable enterprise applications.",
+    "logo": "/assets/certificates/alura.png",
+    "description_long": "This comprehensive training immersed me in the heart of enterprise development with Java and the powerful Spring Framework. Throughout the course, I mastered the creation of RESTful APIs, data persistence management with Spring Data JPA and Hibernate, and the implementation of robust security with Spring Security. Hands-on experience in building microservices and understanding distributed architectures prepared me to design and deploy high-performance software solutions. This training is a fundamental pillar for my career as a backend developer, equipping me with the tools and knowledge to face the most demanding challenges in the sector.",
+    "learned": [
+      "Development of RESTful APIs with Spring Boot and Spring MVC.",
+      "Data persistence management with Spring Data JPA and Hibernate.",
+      "Implementation of security in web applications with Spring Security.",
+      "Microservices concepts and distributed architectures.",
+      "Dependency management and configuration with Spring IoC and DI.",
+      "Testing Spring applications with JUnit and Mockito."
+    ],
+    "tools_used": [
+      "Java Development Kit (JDK)",
+      "Spring Framework (Spring Boot, Spring MVC, Spring Data JPA, Spring Security)",
+      "Maven/Gradle",
+      "Relational databases (e.g., PostgreSQL, MySQL)",
+      "Postman/Insomnia for API testing",
+      "Git and GitHub",
+      "Integrated Development Environments (IDE) like IntelliJ IDEA or Eclipse"
+    ],
+    "experience_gained": [
+      "Design and development of scalable backend applications.",
+      "Integration of databases and external services.",
+      "Implementation of authentication and authorization in APIs.",
+      "Development of modular and maintainable solutions.",
+      "Resolution of complex problems in enterprise development environments."
+    ],
+    "benefits": [
+      "Mastery of Spring Framework, the industry standard for enterprise Java.",
+      "Ability to build high-quality RESTful APIs.",
+      "Skill to design and develop microservices.",
+      "Preparation for Java Backend or Fullstack developer roles."
+    ]
+  },
+  {
+    "title": "Foro Hub Challenge: REST API Development with Spring Framework",
+    "issuer": "Alura Latam",
+    "date": "2025",
+    "description": "Practical project developing a complete RESTful API using Spring Framework, applying best practices.",
+    "logo": "/assets/certificates/alura.png",
+    "description_long": "This challenge was an immersive experience in developing a robust RESTful API for a discussion forum, using the Spring ecosystem. From database design to implementation of secure and efficient endpoints, I applied advanced knowledge of Spring Boot, Spring Data JPA, and Spring Security. The project allowed me to consolidate my ability to build scalable backend solutions, handle data persistence, and ensure information integrity. It was an invaluable opportunity to simulate a real development environment and deliver a functional, high-quality product.",
+    "learned": [
+      "Design and development of RESTful APIs with Spring Boot.",
+      "Handling of CRUD operations (Create, Read, Update, Delete) in an API.",
+      "Data persistence with Spring Data JPA and relational databases.",
+      "Implementation of security in APIs with Spring Security (authentication and authorization).",
+      "Input data validation and error handling in APIs.",
+      "API documentation with Swagger/OpenAPI (if applicable in the challenge)."
+    ],
+    "tools_used": [
+      "Java Development Kit (JDK)",
+      "Spring Boot",
+      "Spring Data JPA",
+      "Spring Security",
+      "Maven/Gradle",
+      "Relational database (e.g., MySQL, PostgreSQL)",
+      "Postman/Insomnia for API testing",
+      "Git and GitHub",
+      "Integrated Development Environments (IDE) like IntelliJ IDEA or Eclipse"
+    ],
+    "experience_gained": [
+      "Development of a complete RESTful API from scratch.",
+      "Application of software design principles in a real project.",
+      "Resolution of integration and security challenges in APIs.",
+      "Improvement of backend code debugging and optimization skills.",
+      "Experience in the development lifecycle of a web application."
+    ],
+    "benefits": [
+      "Demonstrated ability to build secure and efficient RESTful APIs.",
+      "Mastery of key tools and frameworks for backend development in Java.",
+      "Practical experience in creating scalable solutions.",
+      "Preparation for backend or Fullstack developer roles with focus on Java/Spring."
+    ]
+  }
+]
