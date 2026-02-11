@@ -78,7 +78,7 @@ export default async function handler(req, res) {
 
   // Check for spam keywords
   const spamKeywords = ['viagra', 'casino', 'lottery', 'prize', 'click here', 'buy now', 'limited offer'];
-  const messagelower = sanitizedMessage.toLowerCase();
+  const messageLower = sanitizedMessage.toLowerCase();
   if (spamKeywords.some(keyword => messageLower.includes(keyword))) {
     console.log('Spam detected via keywords');
     return res.status(200).json({ message: 'Message sent successfully' }); // Fake success
