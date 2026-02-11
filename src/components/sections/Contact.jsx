@@ -29,8 +29,12 @@ const Contact = () => {
   }, [submitMessage]);
 
   const onSubmit = async (data) => {
+    // Honeypot check - if website field is filled, it's a bot
     if (data.website) {
       console.log("Honeypot field filled, likely a bot.");
+      setSubmitMessage("¡Mensaje enviado con éxito! Gracias por contactarme, te responderé lo antes posible.");
+      setMessageType('success');
+      reset();
       return;
     }
 
@@ -47,14 +51,19 @@ const Contact = () => {
       });
 
       if (!response.ok) {
-        throw new Error('Network response was not ok');
+        const errorData = await response.json().catch(() => ({}));
+        if (response.status === 429) {
+          throw new Error('Demasiados intentos. Por favor, espera un momento antes de volver a intentar.');
+        }
+        throw new Error(errorData.message || 'Network response was not ok');
       }
 
       setSubmitMessage("¡Mensaje enviado con éxito! Gracias por contactarme, te responderé lo antes posible.");
       setMessageType('success');
       reset();
     } catch (error) {
-      setSubmitMessage("Error al enviar el mensaje. Por favor, inténtalo de nuevo más tarde o contáctame directamente por otro medio.");
+      console.error('Contact form error:', error);
+      setSubmitMessage(error.message || "Error al enviar el mensaje. Por favor, inténtalo de nuevo más tarde o contáctame directamente por otro medio.");
       setMessageType('error');
     } finally {
       setIsSubmitting(false);
