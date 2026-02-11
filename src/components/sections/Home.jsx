@@ -17,7 +17,7 @@ const Home = () => {
         <img 
           src={perfil} 
           alt="Ariel Nogueroles" 
-          className="w-64 h-64 md:w-80 md:h-80 rounded-full object-contain shadow-lg shadow-green-500/50"
+          className="w-64 h-64 md:w-80 md:h-80 rounded-full object-cover shadow-lg shadow-green-500/50"
           loading="lazy"
         />
       </div>
