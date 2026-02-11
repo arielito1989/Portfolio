@@ -30,6 +30,29 @@ function sanitizeInput(input) {
     .substring(0, 5000); // Limit length
 }
 
+async function verifyRecaptcha(token) {
+  const secretKey = process.env.RECAPTCHA_SECRET_KEY;
+  
+  if (!secretKey) {
+    console.error('RECAPTCHA_SECRET_KEY not configured');
+    return { success: false, score: 0 };
+  }
+
+  try {
+    const response = await fetch('https://www.google.com/recaptcha/api/siteverify', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: `secret=${secretKey}&response=${token}`,
+    });
+
+    const data = await response.json();
+    return data;
+  } catch (error) {
+    console.error('reCAPTCHA verification error:', error);
+    return { success: false, score: 0 };
+  }
+}
+
 export default async function handler(req, res) {
   // CORS headers
   res.setHeader('Access-Control-Allow-Origin', '*');
@@ -52,7 +75,22 @@ export default async function handler(req, res) {
     });
   }
 
-  const { name, email, message, website } = req.body;
+  const { name, email, message, website, recaptchaToken } = req.body;
+
+  // Verify reCAPTCHA
+  if (recaptchaToken) {
+    const recaptchaResult = await verifyRecaptcha(recaptchaToken);
+    
+    // Check if reCAPTCHA verification was successful and score is high enough
+    if (!recaptchaResult.success || recaptchaResult.score < 0.5) {
+      console.log('reCAPTCHA verification failed:', {
+        success: recaptchaResult.success,
+        score: recaptchaResult.score,
+        errors: recaptchaResult['error-codes']
+      });
+      return res.status(200).json({ message: 'Message sent successfully' }); // Fake success for bots
+    }
+  }
 
   // Honeypot check - if website field is filled, it's a bot
   if (website) {
