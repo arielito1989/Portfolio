@@ -43,7 +43,7 @@ const Contact = () => {
 
     try {
       // Get reCAPTCHA token
-      const token = await window.grecaptcha.execute('6Le0e2gsAAAAAJJmXcv_I_7tDJ5jKhKGETfyhkkj', { action: 'submit' });
+      const token = await window.grecaptcha.execute('6LfYfmgsAAAAAMvS_nXUmVaRDcI7gsGgfq8qcqSa', { action: 'submit' });
       
       const response = await fetch('/api/send-email', {
         method: 'POST',
